@@ -1,0 +1,357 @@
+Skip to content
+You said:
+an active inference model consciousness? We offer three conditions implying that it can. The first condition is
+the simulation of a world model, which determines what can be known or acted upon; namely an epistemic field.
+The second is inferential competition to enter the world model. Only the inferences that coherently reduce long-
+term uncertainty win, evincing a selection for consciousness that we call Bayesian binding. The third is epistemic
+depth, which is the recurrent sharing of the Bayesian beliefs throughout the system. Due to this recursive loop in a
+hierarchical system (such as a brain) the world model contains the knowledge that it exists. This is distinct from
+self-consciousness, because the world model knows itself non-locally and continuously evidences this knowing (i.
+e., field-evidencing). Formally, we propose a hyper-model for precision-control, whose latent states (or parame-
+ters) encode and control the overall structure and weighting rules for all layers of inference. These globally
+integrated preferences for precision enact the epistemic agency and flexibility reminiscent of general intelligence.
+This Beautiful Loop Theory is also deeply revealing about altered states, meditation, and the full spectrum of
+conscious experience.
+1. Introduction
+Consciousness is perhaps the biggest mystery in science. At a certain
+point, most fields of inquiry find that the strange capacity of organisms
+to experience cannot be overlooked. Books, articles, and media discus-
+sing the nature of consciousness abound, with unique perspectives
+emerging from psychologists, neuroscientists, philosophers, phenome-
+nologists, computer scientists, biologists, physicists, and contempla-
+tives. Yet, most would agree that consciousness remains an inconvenient
+enigma in a world that otherwise seems reducible to things, objects,
+patterns, and equations.
+Equally, it is clear that the tools of science can reveal something
+about the nature of consciousness. Thousands of experiments attest that
+consciousness has predictable characteristics, predictable correlates,
+and fluctuates under predictable conditions (Koch et al., 2016; Frith,
+2021). Thanks to this growing evidence base, an array of impressive
+theories of consciousness (ToCs) have emerged in recent years
+(Rosenthal, 2000; Seth and Bayne, 2022; Carruthers, 2017; Tononi,
+2008; Baars, 2005). These theories have many strengths and explanatory
+power but a general consensus in the scientific community does not
+exist. Even the metaphysical assumptions underlying the science of
+consciousness still result in fierce debates (Kuhn, 2024; Fleming et al.,
+2023; Kastrup, 2008).
+Here, we aim to contribute to these theories by building on a
+promising general theory of organisms, known as active inference or
+predictive processing, under the free energy principle (Friston, 2010; Clark,
+2013; Hohwy, 2013; Seth and Tsakiris, 2018). Several others have
+proposed that active inference may provide solutions to different fea-
+tures of conscious experience (e.g., Hohwy, 2022; Hohwy and Seth,
+2020; Safron, 2020; 2022; Carhart-Harris et al., 2014; Rudrauf et al.,
+2017; Friston, 2018; Williford et al., 2018; Clark, 2019; Kanai et al.,
+2019; Chang et al., 2020; Deane, 2021; Whyte and Smith, 2021; Whyte
+et al., 2024). Nevertheless, it remains unclear whether active inference
+can satisfy the conditions for a ToC. Yet others have proposed that we
+* Corresponding author at: Faculty of Health, Southern Cross University, Gold Coast, Australia.
+E-mail address: ruben.laukkonen@gmail.com (R. Laukkonen).
+Contents lists available at ScienceDirect
+Neuroscience and Biobehavioral Reviews
+journal homepage: www.elsevier.com/locate/neubiorev
+https://doi.org/10.1016/j.neubiorev.2025.106296
+Received 2 October 2024; Received in revised form 14 July 2025; Accepted 20 July 2025
+Neuroscience and Biobehavioral Reviews 176 (2025) 106296
+Available online 30 July 2025
+0149-7634/© 2025 The Author(s). Published by Elsevier Ltd. This is an open access article under the CC BY license (http://creativecommons.org/licenses/by/4.0/).
+should think of active inference as providing “…theories for con-
+sciousness science, rather than ToCs per se” (Seth and Bayne, 2022, p.
+446). The question arises, what conditions would active inference need
+to satisfy in order to cross the ToC threshold? Why is it that the theory is
+so successful in explaining perception, cognition, and action, but not
+consciousness itself?
+To address these questions, we propose three conditions that seem
+necessary for consciousness and show how some active inference sys-
+tems satisfy them. The first condition is a generative world model, or
+epistemic field. This provides the ‘space’ or contents that can be known,
+hence the term epistemic (Metzinger, 2020). The second condition is
+inferential competition, which determines what becomes conscious and
+why it is coherent (i.e., addressing the binding problem). The third and
+final condition is epistemic depth, which refers to the fact that the
+epistemic field is recursively, and widely (i.e., deeply) shared
+throughout the system. These three conditions together form what we
+call a ‘beautiful loop’ that allows the generation of a coherent and aware
+world model. As we will see, this idea has some similar characteristics to
+“broadcasting” (Dehaene et al., 2017), “information integration”
+(Tononi, 2008), and “fame in the brain” (Dennett, 2001), albeit with
+important differences.
+Below, we will introduce one condition at a time. We will then show
+how active inference can provide a parsimonious explanation for a range
+of cognitive processes and states of consciousness when these conditions
+are satisfied. Our view also implies that the most basal or minimal form
+of awareness is a highly simplified (nearly contentless) world model
+knowing itself recursively. Therefore, a first person perspective, self-
+modeling, and agency, are not prerequisites of awareness, but are
+instead common forms or features of conscious world models
+(Metzinger, 2020).
+To be concise, we will avoid an extensive literature review (see Seth
+and Bayne, 2022; Frith, 2021; or Lau, 2022 for reviews on ToCs).
+However, as noted above, many features of the theory (reviewed in
+Table 2 of the discussion) are consistent with elements of other ToCs
+such as Global Neuronal Workspace Theory (GNWT, Dehaene et al.,
+2017), Higher Order Theories (HOT, Lau and Rosenthal, 2011), Recurrent
+Processing Theory (RPT, Lamme and Roelfsema, 2000; Pennartz et al.,
+2019) and Integrated Information Theory (IIT, Tononi, 2008). Links with
+existing theories will be made throughout. The strength of our approach
+will be in showing how the interactions of a minimal set of computa-
+tional assumptions within active inference may provide the ingredients
+for consciousness, with implications for understanding various states
+from lucid dreaming to meditation, psychedelics, and artificial
+intelligence.
+2. Simulating a reality model
+In order to move about in a world and keep ourselves alive, we need a
+model of that world. One could not walk, jump, pick up a glass, catch a
+ball, or give a hug, without a simulation of the unfolding present.
+Achieving such a coherent model of reality is an immense feat, especially
+considering that the brain has to deal with unpredictable, imprecise and
+often incoherent data (Treisman, 1996). Yet, somehow, our experience
+of reality seems to make sense—it has depth, color, shape, thought,
+emotion, people, and objects that we seem to understand and predict
+with relative ease. Notably, there can also be an awareness of the con-
+tents of this world model. We experience the catching of the ball, the
+texture of grass under our feet, and the warm embrace. Our world ap-
+pears to be alive.
+We term this ‘experienced world’, which is the organism’s entire
+lived reality, the generative phenomenal, unified world model (hereafter
+simply reality model). It is generative because processes internal to the
+organism play a central role in constructing or generating the ‘output’ of
+the model. It is phenomenal because there can be an experience of the
+reality model—it constitutes our lived world. And it is unified because it
+is coherent or appears to be ‘bound’ together as a whole. This reality
+model is also an epistemic field because it is a place (or flow of sensations)
+that can be known, explored, interrogated, and updated—a kind of
+affordance for action, both physical and mental (Metzinger, 2017). Our
+model of reality tells us what is possible and what is not possible, what
+will keep us alive and what will harm us, and even what we ourselves
+are. We take such a model to be a necessary condition for consciousness
+because it defines what can become conscious, be known, or
+experienced.
+Active inference provides a straightforward solution to — or
+description of — how organisms construct a reality model apt for their
+lived world (Friston, 2006, 2010, 2017; Parr et al., 2022). Various de-
+tails of this theory will be introduced later; here, it is sufficient to lay out
+a few of the key tenets. Active inference can be derived from two co-
+dependent assumptions: (1) the imperative for biological systems to
+maintain a boundary between themselves and the environment (i.e.,
+existence), and (2) the necessity to remain in a specific set of (charac-
+teristic) states compatible with continued existence (i.e., adaptive ac-
+tions). From these premises, we can construct a framework where
+existence necessitates a generative model of the self and environment,
+allowing the system to resolve surprising sensations — i.e., homeostasis
+— and anticipate surprising outcomes and maintain themselves through
+adaptive action, i.e., allostasis. In order to learn and update the model,
+organisms reduce prediction errors, or uncertainty.1 Or flipped around,
+the organism persists by seeking evidence for its own existence, i.e.,
+self-evidencing (Hohwy, 2016). Minimizing prediction errors—the dif-
+ference between top-down predictions and input—simultaneously im-
+proves the model’s accuracy and guides the system towards preferred,
+livable, states that are characteristic of the kind of thing it is.
+The key innovation of active inference lies in treating action selection
+as an inference problem, where policies (sequences of actions) are
+selected to minimize expected uncertainty (i.e., surprises in the future
+consequent on a policy). In order to handle the separation of temporal
+scales in real-world environments — and to balance present-moment
+expectations with future needs — the generative model is almost uni-
+versally hierarchical, with higher levels encoding more abstract and
+longer-term predictions. For example, soundwaves can be abstracted
+into phonemes, which can be abstracted into syllables, and then into
+words, sentences, biographies, and so on (Baltzell et al., 2019; Dehaene
+et al., 2015; Ding et al., 2015; Taylor et al., 2015; Friston et al., 2024;
+Friston et al., 2017; George and Hawkins, 2009). This formulation al-
+lows for deep narratives about our experiences and our bodies across
+time, as well as goal-directed behavior, to emerge from the fundamental
+drive to maintain existence.
+Finally, the prediction errors that report the degree of surprise — and
+thereby drive Bayesian belief updating at each hierarchical level — are
+precision-weighted (Feldman and Friston, 2010). Precision modulates
+the impact of prediction errors on belief updating and policy selection by
+controlling the gain on error units. High precision amplifies the influ-
+ence of prediction errors, while low precision attenuates them. This
+precision-weighting mechanism allows the system to flexibly adapt to
+different contexts by modulating the balance between sensory evidence
+and prior beliefs. Put simply, we need to know what we know but also
+how confident we are about it. In some cases, we can trust our beliefs, in
+other cases we need to focus on learning something new from the world
+(Friston and Kiebel, 2009). On this reading, world models are ‘precision
+engineered’, where increasing the precision of certain prediction errors
+can be understood in terms of attending to their source.
+One of the advantages of active inference is that it can act as a bridge
+between first and third-person approaches (cf. the explanatory gap,
+Levine, 1983). In other words, computational approaches like active
+inference offer a middle-way between subjective experience and neural
+mechanisms, providing mechanistic insight into both (see Fig. 1). This
+approach is sometimes called computational neurophenomenology (Suzuki
+1 Technically an upper bound on surprise or negative log evidence
+R. Laukkonen et al. Neuroscience and Biobehavioral Reviews 176 (2025) 106296
+2
+
+
+use this paper, help me dset upa  research project where i expewriment to make ateh simpelst buty compelte version to fthis theory in software
+ChatGPT said:
+
+Excellent — this is a fascinating and ambitious project. You want to build a software instantiation of the simplest, but complete, active-inference-based consciousness model as proposed in Laukkonen et al. (2025), “An active inference model of consciousness: The Beautiful Loop Theory”.
+
+Let’s structure this as a research project plan — moving from theory → computational formalization → software experiment design → evaluation.
+🧠 1. Research Goal
+
+Goal:
+Implement a minimal but complete active inference agent that satisfies the three necessary conditions for consciousness proposed in the paper:
+
+    World simulation (epistemic field) — the agent must maintain a generative model of its environment.
+
+    Inferential competition (Bayesian binding) — multiple candidate inferences compete, with coherence and uncertainty reduction determining which are “bound” into awareness.
+
+    Epistemic depth (recursive self-modeling) — beliefs at different hierarchical levels recurrently inform each other, enabling the model to “know that it knows.”
+
+The experiment aims to simulate and visualize this “beautiful loop” and test whether it produces behaviors resembling minimal awareness (e.g., adaptive self-evidencing and model coherence).
+⚙️ 2. Conceptual Design
+
+We'll create a hierarchical active inference agent that interacts with a simple simulated environment (like a 2D world). The hierarchy will have three layers:
+Level	Function	Description
+L1	Sensory prediction	Learns to predict incoming sensory states (e.g., light, sound, position).
+L2	Conceptual integration / binding	Competes between possible “interpretations” or “beliefs” about causes of sensations.
+L3	Epistemic self-model (meta-inference)	Encodes the precision or confidence structure for the entire hierarchy; recurrently adjusts priors and precisions — 
+the “hyper-model” or “Beautiful Loop.”
+
+These correspond directly to the paper’s epistemic field, Bayesian binding, and epistemic depth.
+🧩 3. Mathematical Core (Active Inference)
+
+At each time step tt:
+
+    Perception (state inference):
+    q(st)∝p(ot∣st) p(st∣st−1)
+    q(st​)∝p(ot​∣st​)p(st​∣st−1​)
+
+    where otot​ = observation, stst​ = hidden state.
+
+    Policy selection (action inference):
+    π∗=arg⁡min⁡πG(π)
+    π∗=argπmin​G(π)
+
+    where G(π)G(π) = expected free energy = epistemic + pragmatic value.
+
+    Precision control (meta-inference):
+    αt=f(q(st),ΣPE)
+    αt​=f(q(st​),ΣPE​)
+
+    where αtαt​ controls the precision-weighting of prediction errors ΣPEΣPE​.
+
+    Recursion:
+    The hyper-model (L3) updates precisions across levels via a loop:
+    dαdt=∇αELBO
+    dtdα​=∇α​ELBO
+
+    implementing epistemic depth — the Beautiful Loop.
+
+💻 4. Implementation Roadmap
+Phase 1 — Environment & Simple Agent
+
+    Environment: 1D or 2D grid world (e.g., light source, target object, noise).
+
+    Agent sensors: position, light intensity, distance.
+
+    Action space: move left/right/up/down, or focus attention.
+
+    Goal: maintain presence in preferred sensory states (homeostasis).
+
+Phase 2 — Hierarchical Model
+
+Implement three layers:
+
+    L1: predict raw sensory inputs (active inference via variational Bayes).
+
+    L2: infer causes of sensations (binding competing hypotheses).
+
+    L3: regulate precision of updates (meta-inference; self-model).
+
+Use PyTorch or JAX to handle gradient-based optimization of the variational free energy functional.
+Phase 3 — Bayesian Binding
+
+Introduce multiple competing latent hypotheses (e.g., “light caused by object A vs. B”) and visualize how one becomes dominant depending on coherence and precision.
+Phase 4 — The “Beautiful Loop”
+
+Enable recurrent updating between L3 → L2 → L1, so that:
+
+    L3 adjusts precisions based on coherence.
+
+    L2 updates beliefs under these precisions.
+
+    L1 generates new sensory predictions → loop continues.
+
+Track:
+
+    entropy (uncertainty) at each level,
+
+    precision modulation,
+
+    evidence accumulation (“self-evidencing”),
+
+    emergence of global coherence (“awareness-like” selection).
+
+🔍 5. Evaluation Metrics
+Metric	What it Tests	Interpretation
+Free energy over time	Self-evidencing	Conscious stability = sustained low free energy
+Precision dynamics	Meta-awareness	Recursive adjustment = epistemic depth
+Entropy reduction	Binding	Coherent world model formation
+Policy coherence	Epistemic agency	Adaptive flexibility and goal-directedness
+🧪 6. Experimental Variations
+
+    Altered precision regimes: Simulate psychedelic or meditative states (as per the paper) by changing L3’s precision control.
+
+    Lesion tests: Remove L3 (no epistemic depth) → see if awareness-like coherence disappears.
+
+    Noise perturbations: Test stability of world model under uncertainty.
+
+🧠 7. Expected Outcomes
+
+    With all three conditions, the system should demonstrate:
+
+        Self-stabilizing coherence in inference dynamics.
+
+        Global modulation of precision (analogous to attention).
+
+        Recursive self-modeling that can be interpreted as a minimal form of “conscious” world modeling.
+
+    Without epistemic depth, expect:
+
+        Fragmented or reactive inference (no stable awareness).
+
+🧰 8. Suggested Tech Stack
+Component	Tools
+Core computation	Python + PyTorch (for differentiable inference)
+Environment	OpenAI Gym or a custom 2D NumPy grid
+Visualization	Matplotlib + interactive dashboard
+Model versioning	Jupyter + Git + Weights & Biases
+Optional simulation framework	Active Inference Lab (AIF-Lab)
+🧭 9. Possible Extensions
+
+    Implement a temporal generative model (Predictive Coding RNN).
+
+    Add “attention” as explicit precision-weighting variable.
+
+    Introduce meta-learning of priors (simulate meditation/psychedelics).
+
+    Compare with other ToCs (e.g., GNWT, IIT) via information integration metrics.
+
+🧾 10. Research Output
+
+You can aim to produce:
+
+    A preprint or conference paper titled “Simulating the Minimal Conscious Agent under Active Inference: A Software Realization of the Beautiful Loop Theory”.
+
+    Open-source code repository documenting a reproducible minimal model.
+
+    Visualizations showing recursive coherence and emergent “field-evidencing.”
+
+Would you like me to:
+
+    🧩 (A) Help you design the model architecture in code form (pseudo or PyTorch),
+    or
+
+    🧠 (B) Formalize the mathematical framework for your methods section (with full active inference equations specialized for this case)?
+
+Both would be natural next steps depending on whether you’re at the theory or coding stage.
+
+
+ChatGPT can make mistakes. Check important info.
