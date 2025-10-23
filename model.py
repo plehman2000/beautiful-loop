@@ -5,26 +5,29 @@ class BaseModel:
     def predict(self, state):
         raise NotImplementedError("Subclasses must implement predict()")
 
-import numpy as np
-
 
 class LinearModel:
-    """A simple learnable linear transition model x_{t+1} = W x_t."""
-
+    """Learnable linear transition x_{t+1} = W x_t + b"""
+    
     def __init__(self, state_dim, lr=0.01):
         self.state_dim = state_dim
         self.lr = lr
-        self.W = np.eye(state_dim)  # start as identity
+        self.W = np.eye(state_dim)       # linear weights
+        self.b = np.zeros(state_dim)     # bias term to handle small states
 
     def __call__(self, state):
         """Predict next state."""
-        return self.W @ state
+        return self.W @ state + self.b
 
     def update(self, prev_state, next_state):
+        """Update weights using prediction error."""
         pred = self(prev_state)
         error = next_state - pred
         self.W += self.lr * np.outer(error, prev_state)
-
+        self.b += self.lr * error          # bias update ensures learning even if prev_state ~ 0
+        # calmp to avoid divergence if w gets too big
+        self.W = np.clip(self.W, -5, 5)
+        self.b = np.clip(self.b, -5, 5)
 
 
 # import torch

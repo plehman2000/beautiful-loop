@@ -14,7 +14,7 @@ class Agent:
         model=None,
     ):
         self.state_dim = state_dim
-        self.internal_state = np.zeros(state_dim)
+        self.internal_state = np.random.normal(0, 0.1, size=state_dim) #NONZERO SO LEARNING IS FASTER 
         self.prev_internal_state = np.zeros(state_dim)   # store past belief
         self.sensory_noise_std = sensory_noise_std
         self.inference_lr = inference_lr
@@ -39,7 +39,9 @@ class Agent:
         """Update internal state and let model learn dynamics."""
         predicted = self.predict_sensation()
         error = sensation - predicted
-        precision = np.exp(self.log_precision)
+        # TODO DEBUG here
+        # precision = np.exp(self.log_precision)
+        precision = 1.0  # simplify
 
         # Standard predictive coding update
         self.prev_internal_state = self.internal_state.copy()

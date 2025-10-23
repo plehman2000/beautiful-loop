@@ -17,7 +17,7 @@ def _():
 @app.cell
 def _(plot_simulation, run_simulation):
     x_true, state_estimates, prediction_errors, precisions, predicted_precisions = (
-        run_simulation(T=500, state_dim=1)
+        run_simulation(T=200, state_dim=1)
     )
     plot_simulation(
         x_true, state_estimates, prediction_errors, precisions, predicted_precisions
